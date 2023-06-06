@@ -3,8 +3,6 @@
     padding: 0;
 }
 body{
-    margin-top: 0px;
-    padding: 0;
     display: grid;
     grid-template-areas: 
     "navbar navbar navbar"
@@ -12,8 +10,7 @@ body{
     "footer footer footer"
     ;
     background-color: #e7e7e7;
-    width: 100%;
-    height: 100%;
+    font-family: 'Geologica', sans-serif;
 }
 .navbar{
     background-color: #25527b;
@@ -25,6 +22,7 @@ body{
 }
 .textonav{
     color: white;
+    font-size: 30px;
 }
 .asidebar{
     margin: 15px;
@@ -32,31 +30,73 @@ body{
     grid-area: asidebar;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+.asidebar strong{
+    font-size: 24px;
+    font-weight: bold;
+    color: #383E47;
+}
+
 .cate{
     margin-top: 15px;
     padding-right: 2px;
     display: flex;
+    font-size: 20px;
+}
+.cant{
+    color: #a5b0bb;
+}
+.product{
+    color: #42426D;
 }
 .grillap{
     margin-top: 15px;
+    margin-bottom: 15px;
     grid-area: grillap;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr ;
+    gap: 15px;
 }
 .producto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 50%;
+    width: 300px;
+    background-color: white;
 }
 .producto img{
     width: 300px;
     height: 325px;
     background-color: white;
 }
+.producto a{
+    margin-top: 10px;
+    background-color: #25527b;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+.producto p{
+    margin-top: 5px;
+}
+.descrip{
+    color: #42426D;
+    font-weight: bold;
+    font-size: 20px;
+}
+.valor{
+    color: #a5b0bb;
+}
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: footer;
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
 }
