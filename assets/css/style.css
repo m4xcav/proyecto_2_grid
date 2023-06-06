@@ -12,18 +12,50 @@ body{
     "footer footer footer"
     ;
     background-color: #e7e7e7;
+    width: 100%;
+    height: 100%;
 }
-
 .navbar{
-    margin-top: 0px;
     background-color: #25527b;
     grid-area: navbar;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textonav{
+    color: white;
 }
 .asidebar{
+    margin: 15px;
+    padding-left: 25px;
     grid-area: asidebar;
+    display: flex;
+    flex-direction: column;
+}
+.cate{
+    margin-top: 15px;
+    padding-right: 2px;
+    display: flex;
 }
 .grillap{
+    margin-top: 15px;
     grid-area: grillap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+.producto img{
+    width: 300px;
+    height: 325px;
+    background-color: white;
 }
 .footer{
     grid-area: footer;
